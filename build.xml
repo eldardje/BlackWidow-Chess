@@ -3,6 +3,7 @@
     <description>Build file for BlackWidow Chess</description>
 
     <property name="build.dir" value="build" />
+    <property name="test.build.dir" value="${build.dir}/test" />
     <property name="lib.dir" value="lib" />
     <property name="resources.dir" value="art" />
     <property name="dist.dir" value="dist" />
@@ -37,6 +38,30 @@
                excludes="tests/**/*.java">
             <classpath refid="master-classpath"/>
         </javac>
+    </target>
+
+    <target name="compile-tests"
+            depends="compile"
+            description="compiles test sources">
+        <mkdir dir="${test.build.dir}" />
+        <javac srcdir="test"
+               destdir="${test.build.dir}"
+               includeAntRuntime="no"
+               failonerror="true">
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+
+    <target name="test"
+            depends="compile-tests"
+            description="runs the JUnit test suite">
+        <junit printsummary="yes" haltonfailure="yes" fork="true">
+            <classpath refid="master-classpath"/>
+            <classpath>
+                <pathelement location="${test.build.dir}"/>
+            </classpath>
+            <test name="com.chess.tests.ChessTestSuite"/>
+        </junit>
     </target>
 
     <target name="jar"

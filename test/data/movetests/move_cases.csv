@@ -1,0 +1,417 @@
+id,model,blocks,fen,setup,from,to,promotion,expected,after,rationale
+A01W,A-Piece,piece=K;location=corner;target=empty;side=W,7k/8/8/8/8/8/8/K7 w - - 0 1,,a1,a2,,LEGAL,7k/8/8/8/8/8/K7/8 b,K from corner to empty target
+A01B,A-Piece,piece=K;location=corner;target=empty;side=B,k7/8/8/8/8/8/8/7K b - - 0 1,,a8,a7,,LEGAL,8/k7/8/8/8/8/8/7K w,K from corner to empty target
+A02W,A-Piece,piece=K;location=corner;target=enemy;side=W,7k/8/8/8/8/8/n7/K7 w - - 0 1,,a1,a2,,LEGAL,7k/8/8/8/8/8/K7/8 b,K from corner to enemy target
+A02B,A-Piece,piece=K;location=corner;target=enemy;side=B,k7/N7/8/8/8/8/8/7K b - - 0 1,,a8,a7,,LEGAL,8/k7/8/8/8/8/8/7K w,K from corner to enemy target
+A03W,A-Piece,piece=K;location=corner;target=own;side=W,7k/8/8/8/8/8/N7/K7 w - - 0 1,,a1,a2,,ILLEGAL,,K from corner to own target
+A03B,A-Piece,piece=K;location=corner;target=own;side=B,k7/n7/8/8/8/8/8/7K b - - 0 1,,a8,a7,,ILLEGAL,,K from corner to own target
+A04W,A-Piece,piece=K;location=corner;target=off_pattern;side=W,7k/8/8/8/8/8/8/K7 w - - 0 1,,a1,f6,,ILLEGAL,,K from corner to off_pattern target
+A04B,A-Piece,piece=K;location=corner;target=off_pattern;side=B,k7/8/8/8/8/8/8/7K b - - 0 1,,a8,f3,,ILLEGAL,,K from corner to off_pattern target
+A05W,A-Piece,piece=K;location=corner;target=past_piece;side=W,7k/8/8/8/8/8/n7/K7 w - - 0 1,,a1,a3,,ILLEGAL,,K from corner to past_piece target
+A05B,A-Piece,piece=K;location=corner;target=past_piece;side=B,k7/N7/8/8/8/8/8/7K b - - 0 1,,a8,a6,,ILLEGAL,,K from corner to past_piece target
+A06W,A-Piece,piece=K;location=edge;target=empty;side=W,7k/8/8/8/K7/8/8/8 w - - 0 1,,a4,b4,,LEGAL,7k/8/8/8/1K6/8/8/8 b,K from edge to empty target
+A06B,A-Piece,piece=K;location=edge;target=empty;side=B,8/8/8/k7/8/8/8/7K b - - 0 1,,a5,b5,,LEGAL,8/8/8/1k6/8/8/8/7K w,K from edge to empty target
+A07W,A-Piece,piece=K;location=edge;target=enemy;side=W,7k/8/8/8/Kn6/8/8/8 w - - 0 1,,a4,b4,,LEGAL,7k/8/8/8/1K6/8/8/8 b,K from edge to enemy target
+A07B,A-Piece,piece=K;location=edge;target=enemy;side=B,8/8/8/kN6/8/8/8/7K b - - 0 1,,a5,b5,,LEGAL,8/8/8/1k6/8/8/8/7K w,K from edge to enemy target
+A08W,A-Piece,piece=K;location=edge;target=own;side=W,7k/8/8/8/KN6/8/8/8 w - - 0 1,,a4,b4,,ILLEGAL,,K from edge to own target
+A08B,A-Piece,piece=K;location=edge;target=own;side=B,8/8/8/kn6/8/8/8/7K b - - 0 1,,a5,b5,,ILLEGAL,,K from edge to own target
+A09W,A-Piece,piece=K;location=edge;target=off_pattern;side=W,7k/8/8/8/K7/8/8/8 w - - 0 1,,a4,f6,,ILLEGAL,,K from edge to off_pattern target
+A09B,A-Piece,piece=K;location=edge;target=off_pattern;side=B,8/8/8/k7/8/8/8/7K b - - 0 1,,a5,f3,,ILLEGAL,,K from edge to off_pattern target
+A10W,A-Piece,piece=K;location=edge;target=past_piece;side=W,7k/8/8/8/Kn6/8/8/8 w - - 0 1,,a4,c4,,ILLEGAL,,K from edge to past_piece target
+A10B,A-Piece,piece=K;location=edge;target=past_piece;side=B,8/8/8/kN6/8/8/8/7K b - - 0 1,,a5,c5,,ILLEGAL,,K from edge to past_piece target
+A11W,A-Piece,piece=K;location=interior;target=empty;side=W,7k/8/8/8/3K4/8/8/8 w - - 0 1,,d4,e4,,LEGAL,7k/8/8/8/4K3/8/8/8 b,K from interior to empty target
+A11B,A-Piece,piece=K;location=interior;target=empty;side=B,8/8/8/3k4/8/8/8/7K b - - 0 1,,d5,e5,,LEGAL,8/8/8/4k3/8/8/8/7K w,K from interior to empty target
+A12W,A-Piece,piece=K;location=interior;target=enemy;side=W,7k/8/8/8/3Kn3/8/8/8 w - - 0 1,,d4,e4,,LEGAL,7k/8/8/8/4K3/8/8/8 b,K from interior to enemy target
+A12B,A-Piece,piece=K;location=interior;target=enemy;side=B,8/8/8/3kN3/8/8/8/7K b - - 0 1,,d5,e5,,LEGAL,8/8/8/4k3/8/8/8/7K w,K from interior to enemy target
+A13W,A-Piece,piece=K;location=interior;target=own;side=W,7k/8/8/8/3KN3/8/8/8 w - - 0 1,,d4,e4,,ILLEGAL,,K from interior to own target
+A13B,A-Piece,piece=K;location=interior;target=own;side=B,8/8/8/3kn3/8/8/8/7K b - - 0 1,,d5,e5,,ILLEGAL,,K from interior to own target
+A14W,A-Piece,piece=K;location=interior;target=off_pattern;side=W,7k/8/8/8/3K4/8/8/8 w - - 0 1,,d4,f6,,ILLEGAL,,K from interior to off_pattern target
+A14B,A-Piece,piece=K;location=interior;target=off_pattern;side=B,8/8/8/3k4/8/8/8/7K b - - 0 1,,d5,f3,,ILLEGAL,,K from interior to off_pattern target
+A15W,A-Piece,piece=K;location=interior;target=past_piece;side=W,7k/8/8/8/3Kn3/8/8/8 w - - 0 1,,d4,f4,,ILLEGAL,,K from interior to past_piece target
+A15B,A-Piece,piece=K;location=interior;target=past_piece;side=B,8/8/8/3kN3/8/8/8/7K b - - 0 1,,d5,f5,,ILLEGAL,,K from interior to past_piece target
+A16W,A-Piece,piece=Q;location=corner;target=empty;side=W,6k1/8/8/8/8/8/8/Q6K w - - 0 1,,a1,a3,,LEGAL,6k1/8/8/8/8/Q7/8/7K b,Q from corner to empty target
+A16B,A-Piece,piece=Q;location=corner;target=empty;side=B,q6k/8/8/8/8/8/8/6K1 b - - 0 1,,a8,a6,,LEGAL,7k/8/q7/8/8/8/8/6K1 w,Q from corner to empty target
+A17W,A-Piece,piece=Q;location=corner;target=enemy;side=W,6k1/8/8/8/8/n7/8/Q6K w - - 0 1,,a1,a3,,LEGAL,6k1/8/8/8/8/Q7/8/7K b,Q from corner to enemy target
+A17B,A-Piece,piece=Q;location=corner;target=enemy;side=B,q6k/8/N7/8/8/8/8/6K1 b - - 0 1,,a8,a6,,LEGAL,7k/8/q7/8/8/8/8/6K1 w,Q from corner to enemy target
+A18W,A-Piece,piece=Q;location=corner;target=own;side=W,6k1/8/8/8/8/N7/8/Q6K w - - 0 1,,a1,a3,,ILLEGAL,,Q from corner to own target
+A18B,A-Piece,piece=Q;location=corner;target=own;side=B,q6k/8/n7/8/8/8/8/6K1 b - - 0 1,,a8,a6,,ILLEGAL,,Q from corner to own target
+A19W,A-Piece,piece=Q;location=corner;target=off_pattern;side=W,6k1/8/8/8/8/8/8/Q6K w - - 0 1,,a1,e6,,ILLEGAL,,Q from corner to off_pattern target
+A19B,A-Piece,piece=Q;location=corner;target=off_pattern;side=B,q6k/8/8/8/8/8/8/6K1 b - - 0 1,,a8,e3,,ILLEGAL,,Q from corner to off_pattern target
+A20W,A-Piece,piece=Q;location=corner;target=past_piece;side=W,6k1/8/8/8/8/8/n7/Q6K w - - 0 1,,a1,a3,,ILLEGAL,,Q from corner to past_piece target
+A20B,A-Piece,piece=Q;location=corner;target=past_piece;side=B,q6k/N7/8/8/8/8/8/6K1 b - - 0 1,,a8,a6,,ILLEGAL,,Q from corner to past_piece target
+A21W,A-Piece,piece=Q;location=edge;target=empty;side=W,7k/8/8/8/Q7/8/8/7K w - - 0 1,,a4,c4,,LEGAL,7k/8/8/8/2Q5/8/8/7K b,Q from edge to empty target
+A21B,A-Piece,piece=Q;location=edge;target=empty;side=B,7k/8/8/q7/8/8/8/7K b - - 0 1,,a5,c5,,LEGAL,7k/8/8/2q5/8/8/8/7K w,Q from edge to empty target
+A22W,A-Piece,piece=Q;location=edge;target=enemy;side=W,7k/8/8/8/Q1n5/8/8/7K w - - 0 1,,a4,c4,,LEGAL,7k/8/8/8/2Q5/8/8/7K b,Q from edge to enemy target
+A22B,A-Piece,piece=Q;location=edge;target=enemy;side=B,7k/8/8/q1N5/8/8/8/7K b - - 0 1,,a5,c5,,LEGAL,7k/8/8/2q5/8/8/8/7K w,Q from edge to enemy target
+A23W,A-Piece,piece=Q;location=edge;target=own;side=W,7k/8/8/8/Q1N5/8/8/7K w - - 0 1,,a4,c4,,ILLEGAL,,Q from edge to own target
+A23B,A-Piece,piece=Q;location=edge;target=own;side=B,7k/8/8/q1n5/8/8/8/7K b - - 0 1,,a5,c5,,ILLEGAL,,Q from edge to own target
+A24W,A-Piece,piece=Q;location=edge;target=off_pattern;side=W,7k/8/8/8/Q7/8/8/7K w - - 0 1,,a4,f6,,ILLEGAL,,Q from edge to off_pattern target
+A24B,A-Piece,piece=Q;location=edge;target=off_pattern;side=B,7k/8/8/q7/8/8/8/7K b - - 0 1,,a5,f3,,ILLEGAL,,Q from edge to off_pattern target
+A25W,A-Piece,piece=Q;location=edge;target=past_piece;side=W,7k/8/8/8/Qn6/8/8/7K w - - 0 1,,a4,c4,,ILLEGAL,,Q from edge to past_piece target
+A25B,A-Piece,piece=Q;location=edge;target=past_piece;side=B,7k/8/8/qN6/8/8/8/7K b - - 0 1,,a5,c5,,ILLEGAL,,Q from edge to past_piece target
+A26W,A-Piece,piece=Q;location=interior;target=empty;side=W,6k1/8/8/8/3Q4/8/8/7K w - - 0 1,,d4,f4,,LEGAL,6k1/8/8/8/5Q2/8/8/7K b,Q from interior to empty target
+A26B,A-Piece,piece=Q;location=interior;target=empty;side=B,7k/8/8/3q4/8/8/8/6K1 b - - 0 1,,d5,f5,,LEGAL,7k/8/8/5q2/8/8/8/6K1 w,Q from interior to empty target
+A27W,A-Piece,piece=Q;location=interior;target=enemy;side=W,6k1/8/8/8/3Q1n2/8/8/7K w - - 0 1,,d4,f4,,LEGAL,6k1/8/8/8/5Q2/8/8/7K b,Q from interior to enemy target
+A27B,A-Piece,piece=Q;location=interior;target=enemy;side=B,7k/8/8/3q1N2/8/8/8/6K1 b - - 0 1,,d5,f5,,LEGAL,7k/8/8/5q2/8/8/8/6K1 w,Q from interior to enemy target
+A28W,A-Piece,piece=Q;location=interior;target=own;side=W,6k1/8/8/8/3Q1N2/8/8/7K w - - 0 1,,d4,f4,,ILLEGAL,,Q from interior to own target
+A28B,A-Piece,piece=Q;location=interior;target=own;side=B,7k/8/8/3q1n2/8/8/8/6K1 b - - 0 1,,d5,f5,,ILLEGAL,,Q from interior to own target
+A29W,A-Piece,piece=Q;location=interior;target=off_pattern;side=W,6k1/8/8/8/3Q4/8/8/7K w - - 0 1,,d4,e6,,ILLEGAL,,Q from interior to off_pattern target
+A29B,A-Piece,piece=Q;location=interior;target=off_pattern;side=B,7k/8/8/3q4/8/8/8/6K1 b - - 0 1,,d5,e3,,ILLEGAL,,Q from interior to off_pattern target
+A30W,A-Piece,piece=Q;location=interior;target=past_piece;side=W,6k1/8/8/8/3Qn3/8/8/7K w - - 0 1,,d4,f4,,ILLEGAL,,Q from interior to past_piece target
+A30B,A-Piece,piece=Q;location=interior;target=past_piece;side=B,7k/8/8/3qN3/8/8/8/6K1 b - - 0 1,,d5,f5,,ILLEGAL,,Q from interior to past_piece target
+A31W,A-Piece,piece=R;location=corner;target=empty;side=W,7k/8/8/8/8/8/8/R6K w - - 0 1,,a1,a3,,LEGAL,7k/8/8/8/8/R7/8/7K b,R from corner to empty target
+A31B,A-Piece,piece=R;location=corner;target=empty;side=B,r6k/8/8/8/8/8/8/7K b - - 0 1,,a8,a6,,LEGAL,7k/8/r7/8/8/8/8/7K w,R from corner to empty target
+A32W,A-Piece,piece=R;location=corner;target=enemy;side=W,7k/8/8/8/8/n7/8/R6K w - - 0 1,,a1,a3,,LEGAL,7k/8/8/8/8/R7/8/7K b,R from corner to enemy target
+A32B,A-Piece,piece=R;location=corner;target=enemy;side=B,r6k/8/N7/8/8/8/8/7K b - - 0 1,,a8,a6,,LEGAL,7k/8/r7/8/8/8/8/7K w,R from corner to enemy target
+A33W,A-Piece,piece=R;location=corner;target=own;side=W,7k/8/8/8/8/N7/8/R6K w - - 0 1,,a1,a3,,ILLEGAL,,R from corner to own target
+A33B,A-Piece,piece=R;location=corner;target=own;side=B,r6k/8/n7/8/8/8/8/7K b - - 0 1,,a8,a6,,ILLEGAL,,R from corner to own target
+A34W,A-Piece,piece=R;location=corner;target=off_pattern;side=W,7k/8/8/8/8/8/8/R6K w - - 0 1,,a1,f6,,ILLEGAL,,R from corner to off_pattern target
+A34B,A-Piece,piece=R;location=corner;target=off_pattern;side=B,r6k/8/8/8/8/8/8/7K b - - 0 1,,a8,f3,,ILLEGAL,,R from corner to off_pattern target
+A35W,A-Piece,piece=R;location=corner;target=past_piece;side=W,7k/8/8/8/8/8/n7/R6K w - - 0 1,,a1,a3,,ILLEGAL,,R from corner to past_piece target
+A35B,A-Piece,piece=R;location=corner;target=past_piece;side=B,r6k/N7/8/8/8/8/8/7K b - - 0 1,,a8,a6,,ILLEGAL,,R from corner to past_piece target
+A36W,A-Piece,piece=R;location=edge;target=empty;side=W,7k/8/8/8/R7/8/8/7K w - - 0 1,,a4,c4,,LEGAL,7k/8/8/8/2R5/8/8/7K b,R from edge to empty target
+A36B,A-Piece,piece=R;location=edge;target=empty;side=B,7k/8/8/r7/8/8/8/7K b - - 0 1,,a5,c5,,LEGAL,7k/8/8/2r5/8/8/8/7K w,R from edge to empty target
+A37W,A-Piece,piece=R;location=edge;target=enemy;side=W,7k/8/8/8/R1n5/8/8/7K w - - 0 1,,a4,c4,,LEGAL,7k/8/8/8/2R5/8/8/7K b,R from edge to enemy target
+A37B,A-Piece,piece=R;location=edge;target=enemy;side=B,7k/8/8/r1N5/8/8/8/7K b - - 0 1,,a5,c5,,LEGAL,7k/8/8/2r5/8/8/8/7K w,R from edge to enemy target
+A38W,A-Piece,piece=R;location=edge;target=own;side=W,7k/8/8/8/R1N5/8/8/7K w - - 0 1,,a4,c4,,ILLEGAL,,R from edge to own target
+A38B,A-Piece,piece=R;location=edge;target=own;side=B,7k/8/8/r1n5/8/8/8/7K b - - 0 1,,a5,c5,,ILLEGAL,,R from edge to own target
+A39W,A-Piece,piece=R;location=edge;target=off_pattern;side=W,7k/8/8/8/R7/8/8/7K w - - 0 1,,a4,f6,,ILLEGAL,,R from edge to off_pattern target
+A39B,A-Piece,piece=R;location=edge;target=off_pattern;side=B,7k/8/8/r7/8/8/8/7K b - - 0 1,,a5,f3,,ILLEGAL,,R from edge to off_pattern target
+A40W,A-Piece,piece=R;location=edge;target=past_piece;side=W,7k/8/8/8/Rn6/8/8/7K w - - 0 1,,a4,c4,,ILLEGAL,,R from edge to past_piece target
+A40B,A-Piece,piece=R;location=edge;target=past_piece;side=B,7k/8/8/rN6/8/8/8/7K b - - 0 1,,a5,c5,,ILLEGAL,,R from edge to past_piece target
+A41W,A-Piece,piece=R;location=interior;target=empty;side=W,7k/8/8/8/3R4/8/8/7K w - - 0 1,,d4,f4,,LEGAL,7k/8/8/8/5R2/8/8/7K b,R from interior to empty target
+A41B,A-Piece,piece=R;location=interior;target=empty;side=B,7k/8/8/3r4/8/8/8/7K b - - 0 1,,d5,f5,,LEGAL,7k/8/8/5r2/8/8/8/7K w,R from interior to empty target
+A42W,A-Piece,piece=R;location=interior;target=enemy;side=W,7k/8/8/8/3R1n2/8/8/7K w - - 0 1,,d4,f4,,LEGAL,7k/8/8/8/5R2/8/8/7K b,R from interior to enemy target
+A42B,A-Piece,piece=R;location=interior;target=enemy;side=B,7k/8/8/3r1N2/8/8/8/7K b - - 0 1,,d5,f5,,LEGAL,7k/8/8/5r2/8/8/8/7K w,R from interior to enemy target
+A43W,A-Piece,piece=R;location=interior;target=own;side=W,7k/8/8/8/3R1N2/8/8/7K w - - 0 1,,d4,f4,,ILLEGAL,,R from interior to own target
+A43B,A-Piece,piece=R;location=interior;target=own;side=B,7k/8/8/3r1n2/8/8/8/7K b - - 0 1,,d5,f5,,ILLEGAL,,R from interior to own target
+A44W,A-Piece,piece=R;location=interior;target=off_pattern;side=W,7k/8/8/8/3R4/8/8/7K w - - 0 1,,d4,f6,,ILLEGAL,,R from interior to off_pattern target
+A44B,A-Piece,piece=R;location=interior;target=off_pattern;side=B,7k/8/8/3r4/8/8/8/7K b - - 0 1,,d5,f3,,ILLEGAL,,R from interior to off_pattern target
+A45W,A-Piece,piece=R;location=interior;target=past_piece;side=W,7k/8/8/8/3Rn3/8/8/7K w - - 0 1,,d4,f4,,ILLEGAL,,R from interior to past_piece target
+A45B,A-Piece,piece=R;location=interior;target=past_piece;side=B,7k/8/8/3rN3/8/8/8/7K b - - 0 1,,d5,f5,,ILLEGAL,,R from interior to past_piece target
+A46W,A-Piece,piece=B;location=corner;target=empty;side=W,6k1/8/8/8/8/8/8/B6K w - - 0 1,,a1,c3,,LEGAL,6k1/8/8/8/8/2B5/8/7K b,B from corner to empty target
+A46B,A-Piece,piece=B;location=corner;target=empty;side=B,b6k/8/8/8/8/8/8/6K1 b - - 0 1,,a8,c6,,LEGAL,7k/8/2b5/8/8/8/8/6K1 w,B from corner to empty target
+A47W,A-Piece,piece=B;location=corner;target=enemy;side=W,7k/8/8/8/8/2n5/8/B6K w - - 0 1,,a1,c3,,LEGAL,7k/8/8/8/8/2B5/8/7K b,B from corner to enemy target
+A47B,A-Piece,piece=B;location=corner;target=enemy;side=B,b6k/8/2N5/8/8/8/8/7K b - - 0 1,,a8,c6,,LEGAL,7k/8/2b5/8/8/8/8/7K w,B from corner to enemy target
+A48W,A-Piece,piece=B;location=corner;target=own;side=W,7k/8/8/8/8/2N5/8/B6K w - - 0 1,,a1,c3,,ILLEGAL,,B from corner to own target
+A48B,A-Piece,piece=B;location=corner;target=own;side=B,b6k/8/2n5/8/8/8/8/7K b - - 0 1,,a8,c6,,ILLEGAL,,B from corner to own target
+A49W,A-Piece,piece=B;location=corner;target=off_pattern;side=W,6k1/8/8/8/8/8/8/B6K w - - 0 1,,a1,e6,,ILLEGAL,,B from corner to off_pattern target
+A49B,A-Piece,piece=B;location=corner;target=off_pattern;side=B,b6k/8/8/8/8/8/8/6K1 b - - 0 1,,a8,e3,,ILLEGAL,,B from corner to off_pattern target
+A50W,A-Piece,piece=B;location=corner;target=past_piece;side=W,7k/8/8/8/8/8/1n6/B6K w - - 0 1,,a1,c3,,ILLEGAL,,B from corner to past_piece target
+A50B,A-Piece,piece=B;location=corner;target=past_piece;side=B,b6k/1N6/8/8/8/8/8/7K b - - 0 1,,a8,c6,,ILLEGAL,,B from corner to past_piece target
+A51W,A-Piece,piece=B;location=edge;target=empty;side=W,7k/8/8/8/B7/8/8/7K w - - 0 1,,a4,c6,,LEGAL,7k/8/2B5/8/8/8/8/7K b,B from edge to empty target
+A51B,A-Piece,piece=B;location=edge;target=empty;side=B,7k/8/8/b7/8/8/8/7K b - - 0 1,,a5,c3,,LEGAL,7k/8/8/8/8/2b5/8/7K w,B from edge to empty target
+A52W,A-Piece,piece=B;location=edge;target=enemy;side=W,7k/8/2n5/8/B7/8/8/7K w - - 0 1,,a4,c6,,LEGAL,7k/8/2B5/8/8/8/8/7K b,B from edge to enemy target
+A52B,A-Piece,piece=B;location=edge;target=enemy;side=B,7k/8/8/b7/8/2N5/8/7K b - - 0 1,,a5,c3,,LEGAL,7k/8/8/8/8/2b5/8/7K w,B from edge to enemy target
+A53W,A-Piece,piece=B;location=edge;target=own;side=W,7k/8/2N5/8/B7/8/8/7K w - - 0 1,,a4,c6,,ILLEGAL,,B from edge to own target
+A53B,A-Piece,piece=B;location=edge;target=own;side=B,7k/8/8/b7/8/2n5/8/7K b - - 0 1,,a5,c3,,ILLEGAL,,B from edge to own target
+A54W,A-Piece,piece=B;location=edge;target=off_pattern;side=W,7k/8/8/8/B7/8/8/7K w - - 0 1,,a4,f6,,ILLEGAL,,B from edge to off_pattern target
+A54B,A-Piece,piece=B;location=edge;target=off_pattern;side=B,7k/8/8/b7/8/8/8/7K b - - 0 1,,a5,f3,,ILLEGAL,,B from edge to off_pattern target
+A55W,A-Piece,piece=B;location=edge;target=past_piece;side=W,7k/8/8/1n6/B7/8/8/7K w - - 0 1,,a4,c6,,ILLEGAL,,B from edge to past_piece target
+A55B,A-Piece,piece=B;location=edge;target=past_piece;side=B,7k/8/8/b7/1N6/8/8/7K b - - 0 1,,a5,c3,,ILLEGAL,,B from edge to past_piece target
+A56W,A-Piece,piece=B;location=interior;target=empty;side=W,6k1/8/8/8/3B4/8/8/7K w - - 0 1,,d4,b6,,LEGAL,6k1/8/1B6/8/8/8/8/7K b,B from interior to empty target
+A56B,A-Piece,piece=B;location=interior;target=empty;side=B,7k/8/8/3b4/8/8/8/6K1 b - - 0 1,,d5,b3,,LEGAL,7k/8/8/8/8/1b6/8/6K1 w,B from interior to empty target
+A57W,A-Piece,piece=B;location=interior;target=enemy;side=W,6k1/8/1n6/8/3B4/8/8/7K w - - 0 1,,d4,b6,,LEGAL,6k1/8/1B6/8/8/8/8/7K b,B from interior to enemy target
+A57B,A-Piece,piece=B;location=interior;target=enemy;side=B,7k/8/8/3b4/8/1N6/8/6K1 b - - 0 1,,d5,b3,,LEGAL,7k/8/8/8/8/1b6/8/6K1 w,B from interior to enemy target
+A58W,A-Piece,piece=B;location=interior;target=own;side=W,6k1/8/1N6/8/3B4/8/8/7K w - - 0 1,,d4,b6,,ILLEGAL,,B from interior to own target
+A58B,A-Piece,piece=B;location=interior;target=own;side=B,7k/8/8/3b4/8/1n6/8/6K1 b - - 0 1,,d5,b3,,ILLEGAL,,B from interior to own target
+A59W,A-Piece,piece=B;location=interior;target=off_pattern;side=W,6k1/8/8/8/3B4/8/8/7K w - - 0 1,,d4,e6,,ILLEGAL,,B from interior to off_pattern target
+A59B,A-Piece,piece=B;location=interior;target=off_pattern;side=B,7k/8/8/3b4/8/8/8/6K1 b - - 0 1,,d5,e3,,ILLEGAL,,B from interior to off_pattern target
+A60W,A-Piece,piece=B;location=interior;target=past_piece;side=W,6k1/8/8/2n5/3B4/8/8/7K w - - 0 1,,d4,b6,,ILLEGAL,,B from interior to past_piece target
+A60B,A-Piece,piece=B;location=interior;target=past_piece;side=B,7k/8/8/3b4/2N5/8/8/6K1 b - - 0 1,,d5,b3,,ILLEGAL,,B from interior to past_piece target
+A61W,A-Piece,piece=N;location=corner;target=empty;side=W,7k/8/8/8/8/8/8/N6K w - - 0 1,,a1,b3,,LEGAL,7k/8/8/8/8/1N6/8/7K b,N from corner to empty target
+A61B,A-Piece,piece=N;location=corner;target=empty;side=B,n6k/8/8/8/8/8/8/7K b - - 0 1,,a8,b6,,LEGAL,7k/8/1n6/8/8/8/8/7K w,N from corner to empty target
+A62W,A-Piece,piece=N;location=corner;target=enemy;side=W,7k/8/8/8/8/1n6/8/N6K w - - 0 1,,a1,b3,,LEGAL,7k/8/8/8/8/1N6/8/7K b,N from corner to enemy target
+A62B,A-Piece,piece=N;location=corner;target=enemy;side=B,n6k/8/1N6/8/8/8/8/7K b - - 0 1,,a8,b6,,LEGAL,7k/8/1n6/8/8/8/8/7K w,N from corner to enemy target
+A63W,A-Piece,piece=N;location=corner;target=own;side=W,7k/8/8/8/8/1N6/8/N6K w - - 0 1,,a1,b3,,ILLEGAL,,N from corner to own target
+A63B,A-Piece,piece=N;location=corner;target=own;side=B,n6k/8/1n6/8/8/8/8/7K b - - 0 1,,a8,b6,,ILLEGAL,,N from corner to own target
+A64W,A-Piece,piece=N;location=corner;target=off_pattern;side=W,7k/8/8/8/8/8/8/N6K w - - 0 1,,a1,f6,,ILLEGAL,,N from corner to off_pattern target
+A64B,A-Piece,piece=N;location=corner;target=off_pattern;side=B,n6k/8/8/8/8/8/8/7K b - - 0 1,,a8,f3,,ILLEGAL,,N from corner to off_pattern target
+A65W,A-Piece,piece=N;location=corner;target=past_piece;side=W,7k/8/8/8/8/8/n7/NN5K w - - 0 1,,a1,b3,,LEGAL,7k/8/8/8/8/1N6/n7/1N5K b,N from corner to past_piece target
+A65B,A-Piece,piece=N;location=corner;target=past_piece;side=B,nn5k/N7/8/8/8/8/8/7K b - - 0 1,,a8,b6,,LEGAL,1n5k/N7/1n6/8/8/8/8/7K w,N from corner to past_piece target
+A66W,A-Piece,piece=N;location=edge;target=empty;side=W,7k/8/8/8/N7/8/8/7K w - - 0 1,,a4,c5,,LEGAL,7k/8/8/2N5/8/8/8/7K b,N from edge to empty target
+A66B,A-Piece,piece=N;location=edge;target=empty;side=B,7k/8/8/n7/8/8/8/7K b - - 0 1,,a5,c4,,LEGAL,7k/8/8/8/2n5/8/8/7K w,N from edge to empty target
+A67W,A-Piece,piece=N;location=edge;target=enemy;side=W,7k/8/8/2n5/N7/8/8/7K w - - 0 1,,a4,c5,,LEGAL,7k/8/8/2N5/8/8/8/7K b,N from edge to enemy target
+A67B,A-Piece,piece=N;location=edge;target=enemy;side=B,7k/8/8/n7/2N5/8/8/7K b - - 0 1,,a5,c4,,LEGAL,7k/8/8/8/2n5/8/8/7K w,N from edge to enemy target
+A68W,A-Piece,piece=N;location=edge;target=own;side=W,7k/8/8/2N5/N7/8/8/7K w - - 0 1,,a4,c5,,ILLEGAL,,N from edge to own target
+A68B,A-Piece,piece=N;location=edge;target=own;side=B,7k/8/8/n7/2n5/8/8/7K b - - 0 1,,a5,c4,,ILLEGAL,,N from edge to own target
+A69W,A-Piece,piece=N;location=edge;target=off_pattern;side=W,7k/8/8/8/N7/8/8/7K w - - 0 1,,a4,f6,,ILLEGAL,,N from edge to off_pattern target
+A69B,A-Piece,piece=N;location=edge;target=off_pattern;side=B,7k/8/8/n7/8/8/8/7K b - - 0 1,,a5,f3,,ILLEGAL,,N from edge to off_pattern target
+A70W,A-Piece,piece=N;location=edge;target=past_piece;side=W,7k/8/8/n7/NN6/8/8/7K w - - 0 1,,a4,c5,,LEGAL,7k/8/8/n1N5/1N6/8/8/7K b,N from edge to past_piece target
+A70B,A-Piece,piece=N;location=edge;target=past_piece;side=B,7k/8/8/nn6/N7/8/8/7K b - - 0 1,,a5,c4,,LEGAL,7k/8/8/1n6/N1n5/8/8/7K w,N from edge to past_piece target
+A71W,A-Piece,piece=N;location=interior;target=empty;side=W,7k/8/8/8/3N4/8/8/7K w - - 0 1,,d4,b5,,LEGAL,7k/8/8/1N6/8/8/8/7K b,N from interior to empty target
+A71B,A-Piece,piece=N;location=interior;target=empty;side=B,7k/8/8/3n4/8/8/8/7K b - - 0 1,,d5,b4,,LEGAL,7k/8/8/8/1n6/8/8/7K w,N from interior to empty target
+A72W,A-Piece,piece=N;location=interior;target=enemy;side=W,7k/8/8/1n6/3N4/8/8/7K w - - 0 1,,d4,b5,,LEGAL,7k/8/8/1N6/8/8/8/7K b,N from interior to enemy target
+A72B,A-Piece,piece=N;location=interior;target=enemy;side=B,7k/8/8/3n4/1N6/8/8/7K b - - 0 1,,d5,b4,,LEGAL,7k/8/8/8/1n6/8/8/7K w,N from interior to enemy target
+A73W,A-Piece,piece=N;location=interior;target=own;side=W,7k/8/8/1N6/3N4/8/8/7K w - - 0 1,,d4,b5,,ILLEGAL,,N from interior to own target
+A73B,A-Piece,piece=N;location=interior;target=own;side=B,7k/8/8/3n4/1n6/8/8/7K b - - 0 1,,d5,b4,,ILLEGAL,,N from interior to own target
+A74W,A-Piece,piece=N;location=interior;target=off_pattern;side=W,7k/8/8/8/3N4/8/8/7K w - - 0 1,,d4,f6,,ILLEGAL,,N from interior to off_pattern target
+A74B,A-Piece,piece=N;location=interior;target=off_pattern;side=B,7k/8/8/3n4/8/8/8/7K b - - 0 1,,d5,f3,,ILLEGAL,,N from interior to off_pattern target
+A75W,A-Piece,piece=N;location=interior;target=past_piece;side=W,7k/8/8/3n4/2NN4/8/8/7K w - - 0 1,,d4,b5,,LEGAL,7k/8/8/1N1n4/2N5/8/8/7K b,N from interior to past_piece target
+A75B,A-Piece,piece=N;location=interior;target=past_piece;side=B,7k/8/8/2nn4/3N4/8/8/7K b - - 0 1,,d5,b4,,LEGAL,7k/8/8/2n5/1n1N4/8/8/7K w,N from interior to past_piece target
+P01W,B-Pawn,rank=start;action=single;occupancy=clear;side=W,4k3/8/8/8/8/8/4P3/4K3 w - - 0 1,,e2,e3,,LEGAL,4k3/8/8/8/8/4P3/8/4K3 b,single step from start
+P01B,B-Pawn,rank=start;action=single;occupancy=clear;side=B,4k3/4p3/8/8/8/8/8/4K3 b - - 0 1,,e7,e6,,LEGAL,4k3/8/4p3/8/8/8/8/4K3 w,single step from start
+P02W,B-Pawn,rank=start;action=double;occupancy=clear;side=W,4k3/8/8/8/8/8/4P3/4K3 w - - 0 1,,e2,e4,,LEGAL,4k3/8/8/8/4P3/8/8/4K3 b,double step from start
+P02B,B-Pawn,rank=start;action=double;occupancy=clear;side=B,4k3/4p3/8/8/8/8/8/4K3 b - - 0 1,,e7,e5,,LEGAL,4k3/8/8/4p3/8/8/8/4K3 w,double step from start
+P03W,B-Pawn,rank=mid;action=double;occupancy=clear;side=W,4k3/8/8/8/8/4P3/8/4K3 w - - 0 1,,e3,e5,,ILLEGAL,,double step off start rank
+P03B,B-Pawn,rank=mid;action=double;occupancy=clear;side=B,4k3/8/4p3/8/8/8/8/4K3 b - - 0 1,,e6,e4,,ILLEGAL,,double step off start rank
+P04W,B-Pawn,rank=mid;action=double;occupancy=history;side=W,4k3/8/8/8/8/8/4P3/4K3 w - - 0 1,e2e3 e8d8,e3,e5,,ILLEGAL,,second double step after moving
+P04B,B-Pawn,rank=mid;action=double;occupancy=history;side=B,4k3/4p3/8/8/8/8/8/4K3 b - - 0 1,e7e6 e1d1,e6,e4,,ILLEGAL,,second double step after moving
+P05W,B-Pawn,rank=mid;action=triple;occupancy=clear;side=W,4k3/8/8/8/8/8/4P3/4K3 w - - 0 1,,e2,e5,,ILLEGAL,,three squares forward
+P05B,B-Pawn,rank=mid;action=triple;occupancy=clear;side=B,4k3/4p3/8/8/8/8/8/4K3 b - - 0 1,,e7,e4,,ILLEGAL,,three squares forward
+P06W,B-Pawn,rank=mid;action=single;occupancy=clear;side=W,4k3/8/8/8/4P3/8/8/4K3 w - - 0 1,,e4,e5,,LEGAL,4k3/8/8/4P3/8/8/8/4K3 b,base: single step mid board
+P06B,B-Pawn,rank=mid;action=single;occupancy=clear;side=B,4k3/8/8/4p3/8/8/8/4K3 b - - 0 1,,e5,e4,,LEGAL,4k3/8/8/8/4p3/8/8/4K3 w,base: single step mid board
+P07W,B-Pawn,rank=mid;action=backward;occupancy=clear;side=W,4k3/8/8/8/4P3/8/8/4K3 w - - 0 1,,e4,e3,,ILLEGAL,,backward
+P07B,B-Pawn,rank=mid;action=backward;occupancy=clear;side=B,4k3/8/8/4p3/8/8/8/4K3 b - - 0 1,,e5,e6,,ILLEGAL,,backward
+P08W,B-Pawn,rank=mid;action=sideways;occupancy=clear;side=W,4k3/8/8/8/4P3/8/8/4K3 w - - 0 1,,e4,d4,,ILLEGAL,,sideways
+P08B,B-Pawn,rank=mid;action=sideways;occupancy=clear;side=B,4k3/8/8/4p3/8/8/8/4K3 b - - 0 1,,e5,d5,,ILLEGAL,,sideways
+P09W,B-Pawn,rank=mid;action=diagonal;occupancy=empty;side=W,4k3/8/8/8/4P3/8/8/4K3 w - - 0 1,,e4,d5,,ILLEGAL,,diagonal with nothing to capture
+P09B,B-Pawn,rank=mid;action=diagonal;occupancy=empty;side=B,4k3/8/8/4p3/8/8/8/4K3 b - - 0 1,,e5,d4,,ILLEGAL,,diagonal with nothing to capture
+P10W,B-Pawn,rank=mid;action=diagonal;occupancy=enemy;side=W,4k3/8/8/3n4/4P3/8/8/4K3 w - - 0 1,,e4,d5,,LEGAL,4k3/8/8/3P4/8/8/8/4K3 b,capture toward a file
+P10B,B-Pawn,rank=mid;action=diagonal;occupancy=enemy;side=B,4k3/8/8/4p3/3N4/8/8/4K3 b - - 0 1,,e5,d4,,LEGAL,4k3/8/8/8/3p4/8/8/4K3 w,capture toward a file
+P11W,B-Pawn,rank=mid;action=diagonal;occupancy=enemy;side=W,4k3/8/8/5n2/4P3/8/8/4K3 w - - 0 1,,e4,f5,,LEGAL,4k3/8/8/5P2/8/8/8/4K3 b,capture toward h file
+P11B,B-Pawn,rank=mid;action=diagonal;occupancy=enemy;side=B,4k3/8/8/4p3/5N2/8/8/4K3 b - - 0 1,,e5,f4,,LEGAL,4k3/8/8/8/5p2/8/8/4K3 w,capture toward h file
+P12W,B-Pawn,rank=mid;action=diagonal;occupancy=own;side=W,4k3/8/8/3N4/4P3/8/8/4K3 w - - 0 1,,e4,d5,,ILLEGAL,,diagonal onto own piece
+P12B,B-Pawn,rank=mid;action=diagonal;occupancy=own;side=B,4k3/8/8/4p3/3n4/8/8/4K3 b - - 0 1,,e5,d4,,ILLEGAL,,diagonal onto own piece
+P13W,B-Pawn,rank=mid;action=single;occupancy=enemy;side=W,4k3/8/8/4n3/4P3/8/8/4K3 w - - 0 1,,e4,e5,,ILLEGAL,,forward capture is not allowed
+P13B,B-Pawn,rank=mid;action=single;occupancy=enemy;side=B,4k3/8/8/4p3/4N3/8/8/4K3 b - - 0 1,,e5,e4,,ILLEGAL,,forward capture is not allowed
+P14W,B-Pawn,rank=mid;action=single;occupancy=own;side=W,4k3/8/8/4N3/4P3/8/8/4K3 w - - 0 1,,e4,e5,,ILLEGAL,,blocked by own piece
+P14B,B-Pawn,rank=mid;action=single;occupancy=own;side=B,4k3/8/8/4p3/4n3/8/8/4K3 b - - 0 1,,e5,e4,,ILLEGAL,,blocked by own piece
+P15W,B-Pawn,rank=start;action=double;occupancy=near_blocked;side=W,4k3/8/8/8/8/4n3/4P3/4K3 w - - 0 1,,e2,e4,,ILLEGAL,,cannot jump a piece on e3
+P15B,B-Pawn,rank=start;action=double;occupancy=near_blocked;side=B,4k3/4p3/4N3/8/8/8/8/4K3 b - - 0 1,,e7,e5,,ILLEGAL,,cannot jump a piece on e3
+P16W,B-Pawn,rank=start;action=double;occupancy=far_blocked;side=W,4k3/8/8/8/4n3/8/4P3/4K3 w - - 0 1,,e2,e4,,ILLEGAL,,double step onto occupied e4
+P16B,B-Pawn,rank=start;action=double;occupancy=far_blocked;side=B,4k3/4p3/8/4N3/8/8/8/4K3 b - - 0 1,,e7,e5,,ILLEGAL,,double step onto occupied e4
+P17W,B-Pawn,rank=start;action=wide;occupancy=enemy;side=W,4k3/8/8/8/6n1/8/4P3/4K3 w - - 0 1,,e2,g4,,ILLEGAL,,two square diagonal
+P17B,B-Pawn,rank=start;action=wide;occupancy=enemy;side=B,4k3/4p3/8/6N1/8/8/8/4K3 b - - 0 1,,e7,g5,,ILLEGAL,,two square diagonal
+P18W,B-Pawn,rank=mid;file=a;action=diagonal;occupancy=enemy;side=W,4k3/8/8/1n6/P7/8/8/4K3 w - - 0 1,,a4,b5,,LEGAL,4k3/8/8/1P6/8/8/8/4K3 b,capture from a file
+P18B,B-Pawn,rank=mid;file=a;action=diagonal;occupancy=enemy;side=B,4k3/8/8/p7/1N6/8/8/4K3 b - - 0 1,,a5,b4,,LEGAL,4k3/8/8/8/1p6/8/8/4K3 w,capture from a file
+P19W,B-Pawn,rank=mid;file=h;action=diagonal;occupancy=enemy;side=W,4k3/8/8/6n1/7P/8/8/4K3 w - - 0 1,,h4,g5,,LEGAL,4k3/8/8/6P1/8/8/8/4K3 b,capture from h file
+P19B,B-Pawn,rank=mid;file=h;action=diagonal;occupancy=enemy;side=B,4k3/8/8/7p/6N1/8/8/4K3 b - - 0 1,,h5,g4,,LEGAL,4k3/8/8/8/6p1/8/8/4K3 w,capture from h file
+F01W,C-Promotion,path=push;piece=q;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,q,LEGAL,4Q3/7k/8/8/8/8/8/4K3 b,push promotes to q
+F01B,C-Promotion,path=push;piece=q;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,q,LEGAL,4k3/8/8/8/8/8/7K/4q3 w,push promotes to q
+F02W,C-Promotion,path=push;piece=r;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,r,LEGAL,4R3/7k/8/8/8/8/8/4K3 b,push promotes to r
+F02B,C-Promotion,path=push;piece=r;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,r,LEGAL,4k3/8/8/8/8/8/7K/4r3 w,push promotes to r
+F03W,C-Promotion,path=push;piece=b;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,b,LEGAL,4B3/7k/8/8/8/8/8/4K3 b,push promotes to b
+F03B,C-Promotion,path=push;piece=b;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,b,LEGAL,4k3/8/8/8/8/8/7K/4b3 w,push promotes to b
+F04W,C-Promotion,path=push;piece=n;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,n,LEGAL,4N3/7k/8/8/8/8/8/4K3 b,push promotes to n
+F04B,C-Promotion,path=push;piece=n;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,n,LEGAL,4k3/8/8/8/8/8/7K/4n3 w,push promotes to n
+F05W,C-Promotion,path=capture_a_side;piece=q;side=W,3n4/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,d8,q,LEGAL,3Q4/7k/8/8/8/8/8/4K3 b,capture_a_side promotes to q
+F05B,C-Promotion,path=capture_a_side;piece=q;side=B,4k3/8/8/8/8/8/4p2K/3N4 b - - 0 1,,e2,d1,q,LEGAL,4k3/8/8/8/8/8/7K/3q4 w,capture_a_side promotes to q
+F06W,C-Promotion,path=capture_a_side;piece=r;side=W,3n4/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,d8,r,LEGAL,3R4/7k/8/8/8/8/8/4K3 b,capture_a_side promotes to r
+F06B,C-Promotion,path=capture_a_side;piece=r;side=B,4k3/8/8/8/8/8/4p2K/3N4 b - - 0 1,,e2,d1,r,LEGAL,4k3/8/8/8/8/8/7K/3r4 w,capture_a_side promotes to r
+F07W,C-Promotion,path=capture_a_side;piece=b;side=W,3n4/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,d8,b,LEGAL,3B4/7k/8/8/8/8/8/4K3 b,capture_a_side promotes to b
+F07B,C-Promotion,path=capture_a_side;piece=b;side=B,4k3/8/8/8/8/8/4p2K/3N4 b - - 0 1,,e2,d1,b,LEGAL,4k3/8/8/8/8/8/7K/3b4 w,capture_a_side promotes to b
+F08W,C-Promotion,path=capture_a_side;piece=n;side=W,3n4/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,d8,n,LEGAL,3N4/7k/8/8/8/8/8/4K3 b,capture_a_side promotes to n
+F08B,C-Promotion,path=capture_a_side;piece=n;side=B,4k3/8/8/8/8/8/4p2K/3N4 b - - 0 1,,e2,d1,n,LEGAL,4k3/8/8/8/8/8/7K/3n4 w,capture_a_side promotes to n
+F09W,C-Promotion,path=capture_h_side;piece=q;side=W,5n2/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,f8,q,LEGAL,5Q2/7k/8/8/8/8/8/4K3 b,capture_h_side promotes to q
+F09B,C-Promotion,path=capture_h_side;piece=q;side=B,4k3/8/8/8/8/8/4p2K/5N2 b - - 0 1,,e2,f1,q,LEGAL,4k3/8/8/8/8/8/7K/5q2 w,capture_h_side promotes to q
+F10W,C-Promotion,path=capture_h_side;piece=r;side=W,5n2/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,f8,r,LEGAL,5R2/7k/8/8/8/8/8/4K3 b,capture_h_side promotes to r
+F10B,C-Promotion,path=capture_h_side;piece=r;side=B,4k3/8/8/8/8/8/4p2K/5N2 b - - 0 1,,e2,f1,r,LEGAL,4k3/8/8/8/8/8/7K/5r2 w,capture_h_side promotes to r
+F11W,C-Promotion,path=capture_h_side;piece=b;side=W,5n2/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,f8,b,LEGAL,5B2/7k/8/8/8/8/8/4K3 b,capture_h_side promotes to b
+F11B,C-Promotion,path=capture_h_side;piece=b;side=B,4k3/8/8/8/8/8/4p2K/5N2 b - - 0 1,,e2,f1,b,LEGAL,4k3/8/8/8/8/8/7K/5b2 w,capture_h_side promotes to b
+F12W,C-Promotion,path=capture_h_side;piece=n;side=W,5n2/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,f8,n,LEGAL,5N2/7k/8/8/8/8/8/4K3 b,capture_h_side promotes to n
+F12B,C-Promotion,path=capture_h_side;piece=n;side=B,4k3/8/8/8/8/8/4p2K/5N2 b - - 0 1,,e2,f1,n,LEGAL,4k3/8/8/8/8/8/7K/5n2 w,capture_h_side promotes to n
+F13W,C-Promotion,path=blocked_enemy;piece=q;side=W,4n3/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,q,ILLEGAL,,promotion square occupied by enemy
+F13B,C-Promotion,path=blocked_enemy;piece=q;side=B,4k3/8/8/8/8/8/4p2K/4N3 b - - 0 1,,e2,e1,q,ILLEGAL,,promotion square occupied by enemy
+F14W,C-Promotion,path=blocked_own;piece=q;side=W,4R3/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,q,ILLEGAL,,promotion square occupied by own piece
+F14B,C-Promotion,path=blocked_own;piece=q;side=B,4k3/8/8/8/8/8/4p2K/4r3 b - - 0 1,,e2,e1,q,ILLEGAL,,promotion square occupied by own piece
+F15W,C-Promotion,path=diagonal_empty;piece=q;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,d8,q,ILLEGAL,,diagonal promotion with no capture
+F15B,C-Promotion,path=diagonal_empty;piece=q;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,d1,q,ILLEGAL,,diagonal promotion with no capture
+F16W,C-Promotion,path=push;piece=k;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,k,ILLEGAL,,promotion to a king
+F16B,C-Promotion,path=push;piece=k;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,k,ILLEGAL,,promotion to a king
+F17W,C-Promotion,path=push;piece=p;side=W,8/4P2k/8/8/8/8/8/4K3 w - - 0 1,,e7,e8,p,ILLEGAL,,promotion to a pawn
+F17B,C-Promotion,path=push;piece=p;side=B,4k3/8/8/8/8/8/4p2K/8 b - - 0 1,,e2,e1,p,ILLEGAL,,promotion to a pawn
+C01W,D-Castling,wing=king;condition=base;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,,e1,g1,,LEGAL,4k3/8/8/8/8/8/8/R4RK1 b,base: all castling conditions met
+C01B,D-Castling,wing=king;condition=base;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,LEGAL,r4rk1/8/8/8/8/8/8/4K3 w,base: all castling conditions met
+C02W,D-Castling,wing=king;condition=own_piece_between;side=W,4k3/8/8/8/8/8/8/R3KN1R w KQ - 0 1,,e1,g1,,ILLEGAL,,own piece between king and rook
+C02B,D-Castling,wing=king;condition=own_piece_between;side=B,r3kn1r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,own piece between king and rook
+C03W,D-Castling,wing=king;condition=enemy_piece_between;side=W,4k3/8/8/8/8/8/8/R3Kn1R w KQ - 0 1,,e1,g1,,ILLEGAL,,enemy piece between king and rook
+C03B,D-Castling,wing=king;condition=enemy_piece_between;side=B,r3kN1r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,enemy piece between king and rook
+C04W,D-Castling,wing=king;condition=king_moved_back;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,e1d1 e8d8 d1e1 d8e8,e1,g1,,ILLEGAL,,king moved and returned
+C04B,D-Castling,wing=king;condition=king_moved_back;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,e8d8 e1d1 d8e8 d1e1,e8,g8,,ILLEGAL,,king moved and returned
+C05W,D-Castling,wing=king;condition=rook_moved_back;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,h1g1 e8d8 g1h1 d8e8,e1,g1,,ILLEGAL,,rook moved and returned
+C05B,D-Castling,wing=king;condition=rook_moved_back;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,h8g8 e1d1 g8h8 d1e1,e8,g8,,ILLEGAL,,rook moved and returned
+C06W,D-Castling,wing=king;condition=other_rook_moved;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,a1b1 e8d8 b1a1 d8e8,e1,g1,,LEGAL,4k3/8/8/8/8/8/8/R4RK1 b,only the other rook moved
+C06B,D-Castling,wing=king;condition=other_rook_moved;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,a8b8 e1d1 b8a8 d1e1,e8,g8,,LEGAL,r4rk1/8/8/8/8/8/8/4K3 w,only the other rook moved
+C07W,D-Castling,wing=king;condition=rook_missing;side=W,4k3/8/8/8/8/8/8/R3K3 w Q - 0 1,,e1,g1,,ILLEGAL,,rook is gone
+C07B,D-Castling,wing=king;condition=rook_missing;side=B,r3k3/8/8/8/8/8/8/4K3 b q - 0 1,,e8,g8,,ILLEGAL,,rook is gone
+C08W,D-Castling,wing=king;condition=right_absent_in_fen;side=W,4k3/8/8/8/8/8/8/R3K2R w Q - 0 1,,e1,g1,,ILLEGAL,,FEN withholds this wing right only
+C08B,D-Castling,wing=king;condition=right_absent_in_fen;side=B,r3k2r/8/8/8/8/8/8/4K3 b q - 0 1,,e8,g8,,ILLEGAL,,FEN withholds this wing right only
+C09W,D-Castling,wing=king;condition=no_rights_in_fen;side=W,4k3/8/8/8/8/8/8/R3K2R w - - 0 1,,e1,g1,,ILLEGAL,,FEN withholds both rights
+C09B,D-Castling,wing=king;condition=no_rights_in_fen;side=B,r3k2r/8/8/8/8/8/8/4K3 b - - 0 1,,e8,g8,,ILLEGAL,,FEN withholds both rights
+C10W,D-Castling,wing=king;condition=king_in_check;side=W,4k3/8/8/4r3/8/8/8/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,castling out of check
+C10B,D-Castling,wing=king;condition=king_in_check;side=B,r3k2r/8/8/8/4R3/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,castling out of check
+C11W,D-Castling,wing=king;condition=transit_attacked;side=W,4k3/8/8/5r2/8/8/8/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,king crosses an attacked square
+C11B,D-Castling,wing=king;condition=transit_attacked;side=B,r3k2r/8/8/8/5R2/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,king crosses an attacked square
+C12W,D-Castling,wing=king;condition=destination_attacked;side=W,4k3/8/8/6r1/8/8/8/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,king lands on an attacked square
+C12B,D-Castling,wing=king;condition=destination_attacked;side=B,r3k2r/8/8/8/6R1/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,king lands on an attacked square
+C13W,D-Castling,wing=king;condition=transit_attacked_by_pawn;side=W,4k3/8/8/8/8/8/6p1/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,pawn covers the crossing square
+C13B,D-Castling,wing=king;condition=transit_attacked_by_pawn;side=B,r3k2r/6P1/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,pawn covers the crossing square
+C14W,D-Castling,wing=king;condition=destination_attacked_by_pawn;side=W,4k3/8/8/8/8/8/7p/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,pawn covers the landing square
+C14B,D-Castling,wing=king;condition=destination_attacked_by_pawn;side=B,r3k2r/7P/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,pawn covers the landing square
+C15W,D-Castling,wing=king;condition=enemy_pawn_on_e2;side=W,4k3/8/8/8/8/8/4p3/R3K2R w KQ - 0 1,,e1,g1,,ILLEGAL,,pawn on e2 covers d1 and f1
+C15B,D-Castling,wing=king;condition=enemy_pawn_on_e2;side=B,r3k2r/4P3/8/8/8/8/8/4K3 b kq - 0 1,,e8,g8,,ILLEGAL,,pawn on e2 covers d1 and f1
+C16W,D-Castling,wing=king;condition=rook_attacked;side=W,4k3/8/8/7r/8/8/8/R3K2R w KQ - 0 1,,e1,g1,,LEGAL,4k3/8/8/7r/8/8/8/R4RK1 b,attacked rook may still castle
+C16B,D-Castling,wing=king;condition=rook_attacked;side=B,r3k2r/8/8/8/7R/8/8/4K3 b kq - 0 1,,e8,g8,,LEGAL,r4rk1/8/8/8/7R/8/8/4K3 w,attacked rook may still castle
+C17W,D-Castling,wing=queen;condition=base;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,LEGAL,4k3/8/8/8/8/8/8/2KR3R b,base: all castling conditions met
+C17B,D-Castling,wing=queen;condition=base;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,LEGAL,2kr3r/8/8/8/8/8/8/4K3 w,base: all castling conditions met
+C18W,D-Castling,wing=queen;condition=own_piece_between;side=W,4k3/8/8/8/8/8/8/R2NK2R w KQ - 0 1,,e1,c1,,ILLEGAL,,own piece between king and rook
+C18B,D-Castling,wing=queen;condition=own_piece_between;side=B,r2nk2r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,own piece between king and rook
+C19W,D-Castling,wing=queen;condition=enemy_piece_between;side=W,4k3/8/8/8/8/8/8/R2nK2R w KQ - 0 1,,e1,c1,,ILLEGAL,,enemy piece between king and rook
+C19B,D-Castling,wing=queen;condition=enemy_piece_between;side=B,r2Nk2r/8/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,enemy piece between king and rook
+C20W,D-Castling,wing=queen;condition=king_moved_back;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,e1d1 e8d8 d1e1 d8e8,e1,c1,,ILLEGAL,,king moved and returned
+C20B,D-Castling,wing=queen;condition=king_moved_back;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,e8d8 e1d1 d8e8 d1e1,e8,c8,,ILLEGAL,,king moved and returned
+C21W,D-Castling,wing=queen;condition=rook_moved_back;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,a1b1 e8d8 b1a1 d8e8,e1,c1,,ILLEGAL,,rook moved and returned
+C21B,D-Castling,wing=queen;condition=rook_moved_back;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,a8b8 e1d1 b8a8 d1e1,e8,c8,,ILLEGAL,,rook moved and returned
+C22W,D-Castling,wing=queen;condition=other_rook_moved;side=W,4k3/8/8/8/8/8/8/R3K2R w KQ - 0 1,h1g1 e8d8 g1h1 d8e8,e1,c1,,LEGAL,4k3/8/8/8/8/8/8/2KR3R b,only the other rook moved
+C22B,D-Castling,wing=queen;condition=other_rook_moved;side=B,r3k2r/8/8/8/8/8/8/4K3 b kq - 0 1,h8g8 e1d1 g8h8 d1e1,e8,c8,,LEGAL,2kr3r/8/8/8/8/8/8/4K3 w,only the other rook moved
+C23W,D-Castling,wing=queen;condition=rook_missing;side=W,4k3/8/8/8/8/8/8/4K2R w K - 0 1,,e1,c1,,ILLEGAL,,rook is gone
+C23B,D-Castling,wing=queen;condition=rook_missing;side=B,4k2r/8/8/8/8/8/8/4K3 b k - 0 1,,e8,c8,,ILLEGAL,,rook is gone
+C24W,D-Castling,wing=queen;condition=right_absent_in_fen;side=W,4k3/8/8/8/8/8/8/R3K2R w K - 0 1,,e1,c1,,ILLEGAL,,FEN withholds this wing right only
+C24B,D-Castling,wing=queen;condition=right_absent_in_fen;side=B,r3k2r/8/8/8/8/8/8/4K3 b k - 0 1,,e8,c8,,ILLEGAL,,FEN withholds this wing right only
+C25W,D-Castling,wing=queen;condition=no_rights_in_fen;side=W,4k3/8/8/8/8/8/8/R3K2R w - - 0 1,,e1,c1,,ILLEGAL,,FEN withholds both rights
+C25B,D-Castling,wing=queen;condition=no_rights_in_fen;side=B,r3k2r/8/8/8/8/8/8/4K3 b - - 0 1,,e8,c8,,ILLEGAL,,FEN withholds both rights
+C26W,D-Castling,wing=queen;condition=king_in_check;side=W,4k3/8/8/4r3/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,castling out of check
+C26B,D-Castling,wing=queen;condition=king_in_check;side=B,r3k2r/8/8/8/4R3/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,castling out of check
+C27W,D-Castling,wing=queen;condition=transit_attacked;side=W,4k3/8/8/3r4/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,king crosses an attacked square
+C27B,D-Castling,wing=queen;condition=transit_attacked;side=B,r3k2r/8/8/8/3R4/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,king crosses an attacked square
+C28W,D-Castling,wing=queen;condition=destination_attacked;side=W,4k3/8/8/2r5/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,king lands on an attacked square
+C28B,D-Castling,wing=queen;condition=destination_attacked;side=B,r3k2r/8/8/8/2R5/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,king lands on an attacked square
+C29W,D-Castling,wing=queen;condition=transit_attacked_by_pawn;side=W,4k3/8/8/8/8/8/2p5/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,pawn covers the crossing square
+C29B,D-Castling,wing=queen;condition=transit_attacked_by_pawn;side=B,r3k2r/2P5/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,pawn covers the crossing square
+C30W,D-Castling,wing=queen;condition=destination_attacked_by_pawn;side=W,4k3/8/8/8/8/8/1p6/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,pawn covers the landing square
+C30B,D-Castling,wing=queen;condition=destination_attacked_by_pawn;side=B,r3k2r/1P6/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,pawn covers the landing square
+C31W,D-Castling,wing=queen;condition=enemy_pawn_on_e2;side=W,4k3/8/8/8/8/8/4p3/R3K2R w KQ - 0 1,,e1,c1,,ILLEGAL,,pawn on e2 covers d1 and f1
+C31B,D-Castling,wing=queen;condition=enemy_pawn_on_e2;side=B,r3k2r/4P3/8/8/8/8/8/4K3 b kq - 0 1,,e8,c8,,ILLEGAL,,pawn on e2 covers d1 and f1
+C32W,D-Castling,wing=queen;condition=rook_attacked;side=W,4k3/8/8/r7/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,LEGAL,4k3/8/8/r7/8/8/8/2KR3R b,attacked rook may still castle
+C32B,D-Castling,wing=queen;condition=rook_attacked;side=B,r3k2r/8/8/8/R7/8/8/4K3 b kq - 0 1,,e8,c8,,LEGAL,2kr3r/8/8/8/R7/8/8/4K3 w,attacked rook may still castle
+C33W,D-Castling,wing=queen;condition=b1_attacked;side=W,4k3/8/8/1r6/8/8/8/R3K2R w KQ - 0 1,,e1,c1,,LEGAL,4k3/8/8/1r6/8/8/8/2KR3R b,b1 may be attacked on the queen side
+C33B,D-Castling,wing=queen;condition=b1_attacked;side=B,r3k2r/8/8/8/1R6/8/8/4K3 b kq - 0 1,,e8,c8,,LEGAL,2kr3r/8/8/8/1R6/8/8/4K3 w,b1 may be attacked on the queen side
+E01W,E-EnPassant,side=a_side;timing=immediate;condition=base;side=W,4k3/3p1p2/8/4P3/8/8/8/4K3 b - - 0 1,d7d5,e5,d6,,LEGAL,4k3/5p2/3P4/8/8/8/8/4K3 b,base: capture toward a file
+E01B,E-EnPassant,side=a_side;timing=immediate;condition=base;side=B,4k3/8/8/8/4p3/8/3P1P2/4K3 w - - 0 1,d2d4,e4,d3,,LEGAL,4k3/8/8/8/8/3p4/5P2/4K3 w,base: capture toward a file
+E02W,E-EnPassant,side=h_side;timing=immediate;condition=base;side=W,4k3/3p1p2/8/4P3/8/8/8/4K3 b - - 0 1,f7f5,e5,f6,,LEGAL,4k3/3p4/5P2/8/8/8/8/4K3 b,capture toward h file
+E02B,E-EnPassant,side=h_side;timing=immediate;condition=base;side=B,4k3/8/8/8/4p3/8/3P1P2/4K3 w - - 0 1,f2f4,e4,f3,,LEGAL,4k3/8/8/8/8/5p2/3P4/4K3 w,capture toward h file
+E03W,E-EnPassant,side=a_side;timing=one_move_late;condition=base;side=W,4k3/3p1p2/8/4P3/8/8/8/4K3 b - - 0 1,d7d5 e1d1 e8d8,e5,d6,,ILLEGAL,,right expires after one move
+E03B,E-EnPassant,side=a_side;timing=one_move_late;condition=base;side=B,4k3/8/8/8/4p3/8/3P1P2/4K3 w - - 0 1,d2d4 e8d8 e1d1,e4,d3,,ILLEGAL,,right expires after one move
+E04W,E-EnPassant,side=a_side;timing=immediate;condition=single_step_pawn;side=W,4k3/8/3p4/4P3/8/8/8/4K3 b - - 0 1,d6d5,e5,d6,,ILLEGAL,,enemy pawn only moved one square
+E04B,E-EnPassant,side=a_side;timing=immediate;condition=single_step_pawn;side=B,4k3/8/8/8/4p3/3P4/8/4K3 w - - 0 1,d3d4,e4,d3,,ILLEGAL,,enemy pawn only moved one square
+E05W,E-EnPassant,side=a_side;timing=immediate;condition=not_adjacent;side=W,4k3/3p4/8/1P6/8/8/8/4K3 b - - 0 1,d7d5,b5,c6,,ILLEGAL,,capturing pawn is not beside it
+E05B,E-EnPassant,side=a_side;timing=immediate;condition=not_adjacent;side=B,4k3/8/8/8/1p6/8/3P4/4K3 w - - 0 1,d2d4,b4,c3,,ILLEGAL,,capturing pawn is not beside it
+E06W,E-EnPassant,side=a_side;timing=immediate;condition=wrong_rank;side=W,4k3/3p4/8/8/4P3/8/8/4K3 b - - 0 1,d7d5 e4e5 e8d8,e5,d6,,ILLEGAL,,capturer arrived after the jump
+E06B,E-EnPassant,side=a_side;timing=immediate;condition=wrong_rank;side=B,4k3/8/8/4p3/8/8/3P4/4K3 w - - 0 1,d2d4 e5e4 e1d1,e4,d3,,ILLEGAL,,capturer arrived after the jump
+E07W,E-EnPassant,side=a_edge;timing=immediate;condition=base;side=W,4k3/1p6/8/P7/8/8/8/4K3 b - - 0 1,b7b5,a5,b6,,LEGAL,4k3/8/1P6/8/8/8/8/4K3 b,capture from a file
+E07B,E-EnPassant,side=a_edge;timing=immediate;condition=base;side=B,4k3/8/8/8/p7/8/1P6/4K3 w - - 0 1,b2b4,a4,b3,,LEGAL,4k3/8/8/8/8/1p6/8/4K3 w,capture from a file
+E08W,E-EnPassant,side=h_edge;timing=immediate;condition=base;side=W,4k3/6p1/8/7P/8/8/8/4K3 b - - 0 1,g7g5,h5,g6,,LEGAL,4k3/8/6P1/8/8/8/8/4K3 b,capture from h file
+E08B,E-EnPassant,side=h_edge;timing=immediate;condition=base;side=B,4k3/8/8/8/7p/8/6P1/4K3 w - - 0 1,g2g4,h4,g3,,LEGAL,4k3/8/8/8/8/6p1/8/4K3 w,capture from h file
+E09W,E-EnPassant,side=a_side;timing=immediate;condition=pin_on_rank;side=W,4k3/3p4/8/K3P2r/8/8/8/8 b - - 0 1,d7d5,e5,d6,,ILLEGAL,,both pawns leave the rank and expose the king
+E09B,E-EnPassant,side=a_side;timing=immediate;condition=pin_on_rank;side=B,8/8/8/8/k3p2R/8/3P4/4K3 w - - 0 1,d2d4,e4,d3,,ILLEGAL,,both pawns leave the rank and expose the king
+E10W,E-EnPassant,side=a_side;timing=immediate;condition=pin_leaves_diagonal;side=W,4k2K/3p4/8/4P3/8/8/8/b7 b - - 0 1,d7d5,e5,d6,,ILLEGAL,,capturing pawn is pinned on a diagonal
+E10B,E-EnPassant,side=a_side;timing=immediate;condition=pin_leaves_diagonal;side=B,B7/8/8/8/4p3/8/3P4/4K2k w - - 0 1,d2d4,e4,d3,,ILLEGAL,,capturing pawn is pinned on a diagonal
+E11W,E-EnPassant,side=a_side;timing=immediate;condition=pin_stays_on_diagonal;side=W,1b2k3/3p4/8/4P3/8/8/7K/8 b - - 0 1,d7d5,e5,d6,,LEGAL,1b2k3/8/3P4/8/8/8/7K/8 b,capture stays on the pinning diagonal
+E11B,E-EnPassant,side=a_side;timing=immediate;condition=pin_stays_on_diagonal;side=B,8/7k/8/8/4p3/8/3P4/1B2K3 w - - 0 1,d2d4,e4,d3,,LEGAL,8/7k/8/8/8/3p4/8/1B2K3 w,capture stays on the pinning diagonal
+E12W,E-EnPassant,side=a_side;timing=immediate;condition=resolves_check;side=W,4k3/3p4/8/4P3/4K3/8/8/8 b - - 0 1,d7d5,e5,d6,,LEGAL,4k3/8/3P4/8/4K3/8/8/8 b,capture removes the checking pawn
+E12B,E-EnPassant,side=a_side;timing=immediate;condition=resolves_check;side=B,8/8/8/4k3/4p3/8/3P4/4K3 w - - 0 1,d2d4,e4,d3,,LEGAL,8/8/8/4k3/8/3p4/8/4K3 w,capture removes the checking pawn
+E13W,E-EnPassant,side=a_side;timing=fen;condition=fen_square_given;side=W,4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1,,e5,d6,,LEGAL,4k3/8/3P4/8/8/8/8/4K3 b,en passant square supplied by FEN
+E13B,E-EnPassant,side=a_side;timing=fen;condition=fen_square_given;side=B,4k3/8/8/8/3Pp3/8/8/4K3 b - d3 0 1,,e4,d3,,LEGAL,4k3/8/8/8/8/3p4/8/4K3 w,en passant square supplied by FEN
+E14W,E-EnPassant,side=a_side;timing=fen;condition=fen_square_absent;side=W,4k3/8/8/3pP3/8/8/8/4K3 w - - 0 1,,e5,d6,,ILLEGAL,,no en passant square in FEN
+E14B,E-EnPassant,side=a_side;timing=fen;condition=fen_square_absent;side=B,4k3/8/8/8/3Pp3/8/8/4K3 b - - 0 1,,e4,d3,,ILLEGAL,,no en passant square in FEN
+S01W,F-KingSafety,mover=K;state=not_in_check;result=enters_attack;side=W,4r2k/8/8/8/8/8/8/3K4 w - - 0 1,,d1,e1,,ILLEGAL,,into a rook file
+S01B,F-KingSafety,mover=K;state=not_in_check;result=enters_attack;side=B,3k4/8/8/8/8/8/8/4R2K b - - 0 1,,d8,e8,,ILLEGAL,,into a rook file
+S02W,F-KingSafety,mover=K;state=not_in_check;result=beside_enemy_king;side=W,8/8/8/3k4/8/3K4/8/8 w - - 0 1,,d3,d4,,ILLEGAL,,next to the enemy king
+S02B,F-KingSafety,mover=K;state=not_in_check;result=beside_enemy_king;side=B,8/8/3k4/8/3K4/8/8/8 b - - 0 1,,d6,d5,,ILLEGAL,,next to the enemy king
+S03W,F-KingSafety,mover=K;state=not_in_check;result=pawn_attack;side=W,7k/8/8/4p3/8/3K4/8/8 w - - 0 1,,d3,d4,,ILLEGAL,,onto a pawn attacked empty square
+S03B,F-KingSafety,mover=K;state=not_in_check;result=pawn_attack;side=B,8/8/3k4/8/4P3/8/8/7K b - - 0 1,,d6,d5,,ILLEGAL,,onto a pawn attacked empty square
+S04W,F-KingSafety,mover=K;state=not_in_check;result=in_front_of_pawn;side=W,7k/8/8/4p3/8/4K3/8/8 w - - 0 1,,e3,e4,,LEGAL,7k/8/8/4p3/4K3/8/8/8 b,square a pawn only pushes to is safe
+S04B,F-KingSafety,mover=K;state=not_in_check;result=in_front_of_pawn;side=B,8/8/4k3/8/4P3/8/8/7K b - - 0 1,,e6,e5,,LEGAL,8/8/8/4k3/4P3/8/8/7K w,square a pawn only pushes to is safe
+S05W,F-KingSafety,mover=K;state=not_in_check;result=captures_guarded;side=W,3r3k/8/8/8/3n4/3K4/8/8 w - - 0 1,,d3,d4,,ILLEGAL,,captures a defended piece
+S05B,F-KingSafety,mover=K;state=not_in_check;result=captures_guarded;side=B,8/8/3k4/3N4/8/8/8/3R3K b - - 0 1,,d6,d5,,ILLEGAL,,captures a defended piece
+S06W,F-KingSafety,mover=K;state=not_in_check;result=captures_loose;side=W,7k/8/8/8/3n4/3K4/8/8 w - - 0 1,,d3,d4,,LEGAL,7k/8/8/8/3K4/8/8/8 b,captures an undefended piece
+S06B,F-KingSafety,mover=K;state=not_in_check;result=captures_loose;side=B,8/8/3k4/3N4/8/8/8/7K b - - 0 1,,d6,d5,,LEGAL,8/8/8/3k4/8/8/8/7K w,captures an undefended piece
+S07W,F-KingSafety,mover=K;state=in_check;result=retreats_on_ray;side=W,4r2k/8/8/8/4K3/8/8/8 w - - 0 1,,e4,e3,,ILLEGAL,,stays on the checking line
+S07B,F-KingSafety,mover=K;state=in_check;result=retreats_on_ray;side=B,8/8/8/4k3/8/8/8/4R2K b - - 0 1,,e5,e6,,ILLEGAL,,stays on the checking line
+S08W,F-KingSafety,mover=K;state=in_check;result=steps_off_ray;side=W,4r2k/8/8/8/4K3/8/8/8 w - - 0 1,,e4,d4,,LEGAL,4r2k/8/8/8/3K4/8/8/8 b,steps out of check
+S08B,F-KingSafety,mover=K;state=in_check;result=steps_off_ray;side=B,8/8/8/4k3/8/8/8/4R2K b - - 0 1,,e5,d5,,LEGAL,8/8/8/3k4/8/8/8/4R2K w,steps out of check
+S09W,F-KingSafety,mover=R;state=pinned_file;result=along_pin;side=W,4r2k/8/8/8/8/4R3/8/4K3 w - - 0 1,,e3,e5,,LEGAL,4r2k/8/8/4R3/8/8/8/4K3 b,pinned rook slides on the pin
+S09B,F-KingSafety,mover=R;state=pinned_file;result=along_pin;side=B,4k3/8/4r3/8/8/8/8/4R2K b - - 0 1,,e6,e4,,LEGAL,4k3/8/8/8/4r3/8/8/4R2K w,pinned rook slides on the pin
+S10W,F-KingSafety,mover=R;state=pinned_file;result=captures_pinner;side=W,4r2k/8/8/8/8/4R3/8/4K3 w - - 0 1,,e3,e8,,LEGAL,4R2k/8/8/8/8/8/8/4K3 b,pinned rook captures the pinner
+S10B,F-KingSafety,mover=R;state=pinned_file;result=captures_pinner;side=B,4k3/8/4r3/8/8/8/8/4R2K b - - 0 1,,e6,e1,,LEGAL,4k3/8/8/8/8/8/8/4r2K w,pinned rook captures the pinner
+S11W,F-KingSafety,mover=R;state=pinned_file;result=off_pin;side=W,4r2k/8/8/8/8/4R3/8/4K3 w - - 0 1,,e3,a3,,ILLEGAL,,pinned rook leaves the pin
+S11B,F-KingSafety,mover=R;state=pinned_file;result=off_pin;side=B,4k3/8/4r3/8/8/8/8/4R2K b - - 0 1,,e6,a6,,ILLEGAL,,pinned rook leaves the pin
+S12W,F-KingSafety,mover=B;state=pinned_diagonal;result=along_pin;side=W,7k/8/8/7b/8/5B2/8/3K4 w - - 0 1,,f3,g4,,LEGAL,7k/8/8/7b/6B1/8/8/3K4 b,pinned bishop slides on the pin
+S12B,F-KingSafety,mover=B;state=pinned_diagonal;result=along_pin;side=B,3k4/8/5b2/8/7B/8/8/7K b - - 0 1,,f6,g5,,LEGAL,3k4/8/8/6b1/7B/8/8/7K w,pinned bishop slides on the pin
+S13W,F-KingSafety,mover=B;state=pinned_diagonal;result=off_pin;side=W,7k/8/8/7b/8/5B2/8/3K4 w - - 0 1,,f3,e4,,ILLEGAL,,pinned bishop leaves the pin
+S13B,F-KingSafety,mover=B;state=pinned_diagonal;result=off_pin;side=B,3k4/8/5b2/8/7B/8/8/7K b - - 0 1,,f6,e5,,ILLEGAL,,pinned bishop leaves the pin
+S14W,F-KingSafety,mover=B;state=pinned_file;result=off_pin;side=W,4r2k/8/8/8/8/4B3/8/4K3 w - - 0 1,,e3,d4,,ILLEGAL,,bishop pinned on a file cannot move
+S14B,F-KingSafety,mover=B;state=pinned_file;result=off_pin;side=B,4k3/8/4b3/8/8/8/8/4R2K b - - 0 1,,e6,d5,,ILLEGAL,,bishop pinned on a file cannot move
+S15W,F-KingSafety,mover=Q;state=pinned_file;result=along_pin;side=W,4r2k/8/8/8/8/4Q3/8/4K3 w - - 0 1,,e3,e6,,LEGAL,4r2k/8/4Q3/8/8/8/8/4K3 b,pinned queen slides on the pin
+S15B,F-KingSafety,mover=Q;state=pinned_file;result=along_pin;side=B,4k3/8/4q3/8/8/8/8/4R2K b - - 0 1,,e6,e3,,LEGAL,4k3/8/8/8/8/4q3/8/4R2K w,pinned queen slides on the pin
+S16W,F-KingSafety,mover=Q;state=pinned_file;result=off_pin;side=W,4r2k/8/8/8/8/4Q3/8/4K3 w - - 0 1,,e3,d3,,ILLEGAL,,pinned queen leaves the pin
+S16B,F-KingSafety,mover=Q;state=pinned_file;result=off_pin;side=B,4k3/8/4q3/8/8/8/8/4R2K b - - 0 1,,e6,d6,,ILLEGAL,,pinned queen leaves the pin
+S17W,F-KingSafety,mover=N;state=pinned_file;result=off_pin;side=W,4r2k/8/8/8/8/4N3/8/4K3 w - - 0 1,,e3,c4,,ILLEGAL,,pinned knight cannot move
+S17B,F-KingSafety,mover=N;state=pinned_file;result=off_pin;side=B,4k3/8/4n3/8/8/8/8/4R2K b - - 0 1,,e6,c5,,ILLEGAL,,pinned knight cannot move
+S18W,F-KingSafety,mover=P;state=pinned_file;result=along_pin;side=W,4r2k/8/8/8/8/4P3/8/4K3 w - - 0 1,,e3,e4,,LEGAL,4r2k/8/8/8/4P3/8/8/4K3 b,pawn pushes along a file pin
+S18B,F-KingSafety,mover=P;state=pinned_file;result=along_pin;side=B,4k3/8/4p3/8/8/8/8/4R2K b - - 0 1,,e6,e5,,LEGAL,4k3/8/8/4p3/8/8/8/4R2K w,pawn pushes along a file pin
+S19W,F-KingSafety,mover=P;state=pinned_rank;result=off_pin;side=W,7k/8/8/8/8/8/K3P2r/8 w - - 0 1,,e2,e3,,ILLEGAL,,pawn pinned on a rank cannot push
+S19B,F-KingSafety,mover=P;state=pinned_rank;result=off_pin;side=B,8/k3p2R/8/8/8/8/8/7K b - - 0 1,,e7,e6,,ILLEGAL,,pawn pinned on a rank cannot push
+S20W,F-KingSafety,mover=P;state=pinned_diagonal;result=captures_pinner;side=W,7k/8/8/8/8/5b2/4P3/3K4 w - - 0 1,,e2,f3,,LEGAL,7k/8/8/8/8/5P2/8/3K4 b,pinned pawn captures the pinner
+S20B,F-KingSafety,mover=P;state=pinned_diagonal;result=captures_pinner;side=B,3k4/4p3/5B2/8/8/8/8/7K b - - 0 1,,e7,f6,,LEGAL,3k4/8/5p2/8/8/8/8/7K w,pinned pawn captures the pinner
+S21W,F-KingSafety,mover=P;state=pinned_diagonal;result=off_pin;side=W,7k/8/8/8/8/5b2/4P3/3K4 w - - 0 1,,e2,e3,,ILLEGAL,,pinned pawn leaves the pin
+S21B,F-KingSafety,mover=P;state=pinned_diagonal;result=off_pin;side=B,3k4/4p3/5B2/8/8/8/8/7K b - - 0 1,,e7,e6,,ILLEGAL,,pinned pawn leaves the pin
+S22W,F-KingSafety,mover=R;state=in_check;result=blocks;side=W,4r2k/8/8/8/8/R7/8/4K3 w - - 0 1,,a3,e3,,LEGAL,4r2k/8/8/8/8/4R3/8/4K3 b,interposes
+S22B,F-KingSafety,mover=R;state=in_check;result=blocks;side=B,4k3/8/r7/8/8/8/8/4R2K b - - 0 1,,a6,e6,,LEGAL,4k3/8/4r3/8/8/8/8/4R2K w,interposes
+S23W,F-KingSafety,mover=N;state=in_check;result=captures_checker;side=W,4r2k/8/3N4/8/8/8/8/4K3 w - - 0 1,,d6,e8,,LEGAL,4N2k/8/8/8/8/8/8/4K3 b,captures the checking piece
+S23B,F-KingSafety,mover=N;state=in_check;result=captures_checker;side=B,4k3/8/8/8/8/3n4/8/4R2K b - - 0 1,,d3,e1,,LEGAL,4k3/8/8/8/8/8/8/4n2K w,captures the checking piece
+S24W,F-KingSafety,mover=R;state=in_check;result=ignores_check;side=W,4r2k/8/8/8/8/R7/8/4K3 w - - 0 1,,a3,a4,,ILLEGAL,,unrelated move while in check
+S24B,F-KingSafety,mover=R;state=in_check;result=ignores_check;side=B,4k3/8/r7/8/8/8/8/4R2K b - - 0 1,,a6,a5,,ILLEGAL,,unrelated move while in check
+S25W,F-KingSafety,mover=P;state=in_check;result=blocks;side=W,7k/8/8/1b6/8/8/3P4/5K2 w - - 0 1,,d2,d3,,LEGAL,7k/8/8/1b6/8/3P4/8/5K2 b,pawn push blocks a diagonal check
+S25B,F-KingSafety,mover=P;state=in_check;result=blocks;side=B,5k2/3p4/8/8/1B6/8/8/7K b - - 0 1,,d7,d6,,LEGAL,5k2/8/3p4/8/1B6/8/8/7K w,pawn push blocks a diagonal check
+S26W,F-KingSafety,mover=R;state=double_check;result=blocks_one;side=W,4r2k/8/8/8/8/3n4/R7/4K3 w - - 0 1,,a2,e2,,ILLEGAL,,one block cannot stop two checkers
+S26B,F-KingSafety,mover=R;state=double_check;result=blocks_one;side=B,4k3/r7/3N4/8/8/8/8/4R2K b - - 0 1,,a7,e7,,ILLEGAL,,one block cannot stop two checkers
+S27W,F-KingSafety,mover=R;state=double_check;result=captures_one;side=W,4r2k/8/8/8/8/R2n4/8/4K3 w - - 0 1,,a3,d3,,ILLEGAL,,one capture cannot stop two checkers
+S27B,F-KingSafety,mover=R;state=double_check;result=captures_one;side=B,4k3/8/r2N4/8/8/8/8/4R2K b - - 0 1,,a6,d6,,ILLEGAL,,one capture cannot stop two checkers
+S28W,F-KingSafety,mover=K;state=double_check;result=steps_away;side=W,4r2k/8/8/8/8/3n4/8/4K3 w - - 0 1,,e1,d2,,LEGAL,4r2k/8/8/8/8/3n4/3K4/8 b,only the king can answer a double check
+S28B,F-KingSafety,mover=K;state=double_check;result=steps_away;side=B,4k3/8/3N4/8/8/8/8/4R2K b - - 0 1,,e8,d7,,LEGAL,8/3k4/3N4/8/8/8/8/4R2K w,only the king can answer a double check
+W01W,G-BoardEdge,piece=R;edge=h;step=+1;side=W,6k1/8/8/8/7R/8/8/K7 w - - 0 1,,h4,a3,,ILLEGAL,,coordinate +1 from h4 wraps to a3
+W01B,G-BoardEdge,piece=R;edge=h;step=+1;side=B,k7/8/8/7r/8/8/8/6K1 b - - 0 1,,h5,a6,,ILLEGAL,,coordinate +1 from h4 wraps to a3
+W02W,G-BoardEdge,piece=R;edge=a;step=-1;side=W,7k/8/8/8/R7/8/8/7K w - - 0 1,,a4,h5,,ILLEGAL,,coordinate -1 from a4 wraps to h5
+W02B,G-BoardEdge,piece=R;edge=a;step=-1;side=B,7k/8/8/r7/8/8/8/7K b - - 0 1,,a5,h4,,ILLEGAL,,coordinate -1 from a4 wraps to h5
+W03W,G-BoardEdge,piece=Q;edge=h;step=+1;side=W,6k1/8/8/8/7Q/8/8/K7 w - - 0 1,,h4,a3,,ILLEGAL,,queen wrap on +1
+W03B,G-BoardEdge,piece=Q;edge=h;step=+1;side=B,k7/8/8/7q/8/8/8/6K1 b - - 0 1,,h5,a6,,ILLEGAL,,queen wrap on +1
+W04W,G-BoardEdge,piece=Q;edge=a;step=-1;side=W,7k/8/8/8/Q7/8/8/7K w - - 0 1,,a4,h5,,ILLEGAL,,queen wrap on -1
+W04B,G-BoardEdge,piece=Q;edge=a;step=-1;side=B,7k/8/8/q7/8/8/8/7K b - - 0 1,,a5,h4,,ILLEGAL,,queen wrap on -1
+W05W,G-BoardEdge,piece=Q;edge=h;step=+9;side=W,6k1/8/8/8/7Q/8/8/K7 w - - 0 1,,h4,a2,,ILLEGAL,,queen wrap on +9
+W05B,G-BoardEdge,piece=Q;edge=h;step=+9;side=B,k7/8/8/7q/8/8/8/6K1 b - - 0 1,,h5,a7,,ILLEGAL,,queen wrap on +9
+W06W,G-BoardEdge,piece=Q;edge=a;step=-9;side=W,7k/8/8/8/Q7/8/8/7K w - - 0 1,,a4,h6,,ILLEGAL,,queen wrap on -9
+W06B,G-BoardEdge,piece=Q;edge=a;step=-9;side=B,7k/8/8/q7/8/8/8/7K b - - 0 1,,a5,h3,,ILLEGAL,,queen wrap on -9
+W07W,G-BoardEdge,piece=B;edge=h;step=-7;side=W,6k1/8/8/8/7B/8/8/K7 w - - 0 1,,h4,a4,,ILLEGAL,,bishop wrap on -7
+W07B,G-BoardEdge,piece=B;edge=h;step=-7;side=B,k7/8/8/7b/8/8/8/6K1 b - - 0 1,,h5,a5,,ILLEGAL,,bishop wrap on -7
+W08W,G-BoardEdge,piece=B;edge=h;step=+9;side=W,6k1/8/8/8/7B/8/8/K7 w - - 0 1,,h4,a2,,ILLEGAL,,bishop wrap on +9
+W08B,G-BoardEdge,piece=B;edge=h;step=+9;side=B,k7/8/8/7b/8/8/8/6K1 b - - 0 1,,h5,a7,,ILLEGAL,,bishop wrap on +9
+W09W,G-BoardEdge,piece=B;edge=a;step=-9;side=W,7k/8/8/8/B7/8/8/7K w - - 0 1,,a4,h6,,ILLEGAL,,bishop wrap on -9
+W09B,G-BoardEdge,piece=B;edge=a;step=-9;side=B,7k/8/8/b7/8/8/8/7K b - - 0 1,,a5,h3,,ILLEGAL,,bishop wrap on -9
+W10W,G-BoardEdge,piece=B;edge=a;step=+7;side=W,7k/8/8/8/B7/8/8/7K w - - 0 1,,a4,h4,,ILLEGAL,,bishop wrap on +7
+W10B,G-BoardEdge,piece=B;edge=a;step=+7;side=B,7k/8/8/b7/8/8/8/7K b - - 0 1,,a5,h5,,ILLEGAL,,bishop wrap on +7
+W11W,G-BoardEdge,piece=K;edge=h;step=+1;side=W,k7/8/8/8/7K/8/8/8 w - - 0 1,,h4,a3,,ILLEGAL,,king wrap on +1
+W11B,G-BoardEdge,piece=K;edge=h;step=+1;side=B,8/8/8/7k/8/8/8/K7 b - - 0 1,,h5,a6,,ILLEGAL,,king wrap on +1
+W12W,G-BoardEdge,piece=K;edge=a;step=-1;side=W,7k/8/8/8/K7/8/8/8 w - - 0 1,,a4,h5,,ILLEGAL,,king wrap on -1
+W12B,G-BoardEdge,piece=K;edge=a;step=-1;side=B,8/8/8/k7/8/8/8/7K b - - 0 1,,a5,h4,,ILLEGAL,,king wrap on -1
+W13W,G-BoardEdge,piece=N;edge=h;step=+10;side=W,k7/8/8/8/7N/8/8/K7 w - - 0 1,,h4,b2,,ILLEGAL,,knight wrap on +10
+W13B,G-BoardEdge,piece=N;edge=h;step=+10;side=B,k7/8/8/7n/8/8/8/K7 b - - 0 1,,h5,b7,,ILLEGAL,,knight wrap on +10
+W14W,G-BoardEdge,piece=N;edge=g;step=+10;side=W,k7/8/8/8/6N1/8/8/K7 w - - 0 1,,g4,a2,,ILLEGAL,,knight wrap from g file
+W14B,G-BoardEdge,piece=N;edge=g;step=+10;side=B,k7/8/8/6n1/8/8/8/K7 b - - 0 1,,g5,a7,,ILLEGAL,,knight wrap from g file
+W15W,G-BoardEdge,piece=N;edge=a;step=-10;side=W,7k/8/8/8/N7/8/8/7K w - - 0 1,,a4,g6,,ILLEGAL,,knight wrap on -10
+W15B,G-BoardEdge,piece=N;edge=a;step=-10;side=B,7k/8/8/n7/8/8/8/7K b - - 0 1,,a5,g3,,ILLEGAL,,knight wrap on -10
+W16W,G-BoardEdge,piece=N;edge=b;step=-10;side=W,7k/8/8/8/1N6/8/8/7K w - - 0 1,,b4,h6,,ILLEGAL,,knight wrap from b file
+W16B,G-BoardEdge,piece=N;edge=b;step=-10;side=B,7k/8/8/1n6/8/8/8/7K b - - 0 1,,b5,h3,,ILLEGAL,,knight wrap from b file
+W17W,G-BoardEdge,piece=P;edge=a;step=-9;side=W,4k3/8/7n/8/P7/8/8/4K3 w - - 0 1,,a4,h6,,ILLEGAL,,"pawn capture wrap, a4 to h6"
+W17B,G-BoardEdge,piece=P;edge=a;step=-9;side=B,4k3/8/8/p7/8/7N/8/4K3 b - - 0 1,,a5,h3,,ILLEGAL,,"pawn capture wrap, a4 to h6"
+W18W,G-BoardEdge,piece=P;edge=h;step=-7;side=W,4k3/8/8/8/n6P/8/8/4K3 w - - 0 1,,h4,a4,,ILLEGAL,,"pawn capture wrap, h4 to a4"
+W18B,G-BoardEdge,piece=P;edge=h;step=-7;side=B,4k3/8/8/N6p/8/8/8/4K3 b - - 0 1,,h5,a5,,ILLEGAL,,"pawn capture wrap, h4 to a4"
+X01W,H-Selection,selection=empty_square;side=W,4k3/8/8/8/8/8/8/4K2R w K - 0 1,,d4,d5,,ILLEGAL,,nothing on the source square
+X01B,H-Selection,selection=empty_square;side=B,4k2r/8/8/8/8/8/8/4K3 b k - 0 1,,d5,d4,,ILLEGAL,,nothing on the source square
+X02W,H-Selection,selection=opponent_piece;side=W,4k2r/8/8/8/8/8/8/4K2R w - - 0 1,,h8,h7,,ILLEGAL,,opponent's rook on White's turn
+X02B,H-Selection,selection=opponent_piece;side=B,4k2r/8/8/8/8/8/8/4K2R b - - 0 1,,h1,h2,,ILLEGAL,,opponent's rook on White's turn
+X03W,H-Selection,selection=same_square;side=W,4k3/8/8/8/8/8/8/4K2R w - - 0 1,,h1,h1,,ILLEGAL,,source equals destination
+X03B,H-Selection,selection=same_square;side=B,4k2r/8/8/8/8/8/8/4K3 b - - 0 1,,h8,h8,,ILLEGAL,,source equals destination
+X04W,H-Selection,selection=out_of_turn;side=W,7k/8/8/8/8/8/8/K6R b - - 0 1,,h1,h8,,ILLEGAL,,White rook move on Black's turn
+X04B,H-Selection,selection=out_of_turn;side=B,k6r/8/8/8/8/8/8/7K w - - 0 1,,h8,h1,,ILLEGAL,,White rook move on Black's turn
